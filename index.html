@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+
+  <!--Using External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Using Internal CSS -->
+  <style>
+    h2 {
+      font-family: 'Segoe UI', sans-serif;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    /* Using a group selector */
+    .about, .title {
+      font-style: italic;
+    }
+
+    /* Attribute selector */
+    a[href^="https://"] {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Inline CSS for background -->
+  <div class="background" style="padding: 20px 0;">
+    <div class="card">
+      <img src="./mine.jpg" alt="Profile Photo" class="profile-pic" />
+      <h2>Ayush Rai</h2>
+      <p class="title">Full Stack Developer Intern</p>
+      <p class="about">
+        MERN + Redux developer, IoT enthusiast, and founder of OctoCult. I love turning ideas into smart, scalable solutions,from web apps to tech-integrated wearables.
+        <br>
+        <!-- <p class="hobbie">Hobbies : Coding | Travelling | Sci-Fi</p> -->
+         <ul class="hobby-list">
+        <li>Coding</li>
+        <li>Travelling</li>
+        <li>Sci Fi Movies</li>
+  </ul>
+      </p>
+      <div class="socials">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
+        <a href="https://www.linkedin.com/in/ayushrai1092/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+      </div>
+      <div class="nav">
+        <button class="active">ABOUT</button>
+        <button>EXPERIENCE</button>
+        <a href="mailto:raiayushmaan1092@gmail.com">
+        <button>CONTACT</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
